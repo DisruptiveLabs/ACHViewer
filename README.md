@@ -7,5 +7,3 @@ Goals
 =====
 
 * Parsing to JSON
-* Command line usage
- * Verificiation (return value 1 for invalid with errors to STDERR)
