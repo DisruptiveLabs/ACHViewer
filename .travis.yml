@@ -11,3 +11,4 @@ deploy:
   file_glob: true
   on:
     repo: DisruptiveLabs/ACHViewer
+    tags: true
