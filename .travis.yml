@@ -4,8 +4,10 @@ script:
 - gradle build
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: W4EvmBsqv7dckG/g0pL2oV6gQ607rZOg4cUmpAP707IJvFu2H9WSkKGK53Lh1+xRvO+1JnCWdAA9rcPp6zvpiudK9qqgReBiYQSYpq1V4l4wExI16ty4uuzxdeOHs6/Pc+1W+c6yGXKRrdxl5lWi2Q1n+GODl7cL+cflFtXez2AW98tnySGuNQ/24VyqkT6WiaE5c6jbWX2ITkZCNobDxe9gq6pyn7JIUvmE3RH14L3SQdtYy1x5HBf3S47eiJW5DiVL7bss1T4aMD+U+bDuzFTAcsXD4M0bv0aZng1Z3+hqBmaQ6+fKwiG36sku5Ik/Fqxha8/W3AneXatDzPYcY2aRnRtDpxZM4XE7VYBhn/MXXtacRvO3W4FJTQP4rmrEePgiqMcNAf1FUDlbwLI5jQdpzZp9lXnlPygglc3oVon6kD3DoqlZSErP7IAOxw4C7R72l7RQNxiCM0aX4Wpi2mOeCCKUQj4I8i/ucvA3ZYn9lInJWyPf0HWM0QrN9HM+I+gM3BL4JYh/c9C0K0Db0sdzr3WvRi//5+/XF8HvY6o64DZQ156fdSKRF/WeNZvtXinUJfys19/DI6ljFTR2SwODno2Oweho31xso+4czBn1+th7VgT1kXEvra2olKqF4e9N0xvC2+/qYOaMsdThjUcUvl3qyUklk03Y7+TXo+M=
-  file: build/libs/*.jar
+  file: "*/build/libs/*.jar"
+  file_glob: true
   on:
     repo: DisruptiveLabs/ACHViewer
