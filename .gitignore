@@ -1,2 +1,6 @@
 out
-.idea
+.ideabuild
+ACHViewer.iml
+build
+.gradle
+*.iml
