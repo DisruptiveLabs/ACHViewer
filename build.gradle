@@ -1,6 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
 version = '1.0'
 
 repositories {
@@ -9,6 +8,28 @@ repositories {
 
 sourceSets {
     main.java.srcDir "src/"
+
+    test {
+        java.srcDirs = ["test/"]
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+
+    onOutput { descriptor, event ->
+        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+    }
 }
 
 jar {
