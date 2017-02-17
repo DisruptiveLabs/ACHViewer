@@ -1,12 +1,10 @@
-package com.ach.achViewer.ach;
-
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
+import com.ach.achViewer.ach.ACHFile;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Vector;
 
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class ACHFileTest {
     @Test

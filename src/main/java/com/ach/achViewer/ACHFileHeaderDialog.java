@@ -141,7 +141,7 @@ public class ACHFileHeaderDialog extends ACHDialog {
         jButtonSave = new javax.swing.JButton();
         jButtonCancel = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("ACH File Header");
         jLabel1.setText("Record Type: ");
 

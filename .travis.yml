@@ -1,6 +1,5 @@
 language: java
 script:
-- gradle check
 - gradle build
 deploy:
   provider: releases

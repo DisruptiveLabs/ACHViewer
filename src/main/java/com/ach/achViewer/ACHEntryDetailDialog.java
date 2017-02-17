@@ -140,7 +140,7 @@ public class ACHEntryDetailDialog extends ACHDialog {
         jButtonSave = new javax.swing.JButton();
         jButtonCancel = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("ACH Edit Detail");
         setModal(true);
         jLabel1.setText("Record Type: ");
